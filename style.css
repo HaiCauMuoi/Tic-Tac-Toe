@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@200;300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@200;300;500&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Anek Odia", sans-serif;
+  font-family: 'Anek Odia', sans-serif;
   color: white;
 }
 
@@ -41,7 +41,6 @@ body {
   width: 32.333333%;
   height: 32.333333%;
   border-color: #fff;
-  border-width: 3px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -51,18 +50,22 @@ body {
 
 .top {
   border-bottom-style: solid;
+  border-top: none;
 }
 
 .left {
   border-right-style: solid;
+  border-left: none;
 }
 
 .right {
   border-left-style: solid;
+  border-right: none;
 }
 
 .bot {
   border-top-style: solid;
+  border-bottom: none;
 }
 
 .score-board {
@@ -101,7 +104,7 @@ body {
 
 .square.x::before,
 .square.x::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 120px;
   height: 18px;
@@ -118,7 +121,7 @@ body {
 
 .square.o::before,
 .square.o::after {
-  content: "";
+  content: '';
   position: absolute;
   border-radius: 100px;
 }

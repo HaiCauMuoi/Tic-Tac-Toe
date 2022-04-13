@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -26,17 +25,17 @@
       </div>
     </header>
     <main>
-      <div class="game">
+      <div id="game" class="game">
         <div class="game-board">
-          <div tabindex="0" class="square top left"></div>
-          <div tabindex="0" class="square top"></div>
-          <div tabindex="0" class="square top right"></div>
-          <div tabindex="0" class="square left"></div>
-          <div tabindex="0" class="square"></div>
-          <div tabindex="0" class="square right"></div>
-          <div tabindex="0" class="square bot left"></div>
-          <div tabindex="0" class="square bot"></div>
-          <div tabindex="0" class="square bot right"></div>
+          <div id="0" class="square top left"></div>
+          <div id="1" class="square top"></div>
+          <div id="2" class="square top right"></div>
+          <div id="3" class="square left"></div>
+          <div id="4" class="square"></div>
+          <div id="5" class="square right"></div>
+          <div id="6" class="square bot left"></div>
+          <div id="7" class="square bot"></div>
+          <div id="8" class="square bot right"></div>
         </div>
 
         <div class="restart"></div>
@@ -44,20 +43,20 @@
 
       <div class="score-board">
         <div class="player1 pl-score">
-          <span class="p1">Player</span>
+          <span class="p1">Player 1</span>
           <span class="x"></span>
-          <div class="score">0</div>
+          <div class="score p1-score">0</div>
         </div>
 
         <div class="tie pl-score">
           <span class="p1">Tie</span>
-          <div class="score">0</div>
+          <div class="score tie-score">0</div>
         </div>
 
         <div class="AI pl-score">
-          <span class="p1">AI</span>
+          <span class="p1">Player 2</span>
           <span class="O"></span>
-          <div class="score">0</div>
+          <div class="score p2-score">0</div>
         </div>
 
         <div class="switch-player">
@@ -81,4 +80,6 @@
       </div>
     </main>
   </body>
+  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </html>
