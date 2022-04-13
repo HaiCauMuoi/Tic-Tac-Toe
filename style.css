@@ -3,13 +3,20 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
 }
 
 body {
   box-sizing: border-box;
   font-family: 'Anek Odia', sans-serif;
   color: white;
+  background-color: black;
+}
+
+.dark-mode {
+  fill: black;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 
 .icon {
@@ -17,7 +24,7 @@ body {
 }
 
 .light-mode__icon {
-  fill: #fff;
+  fill: #000;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -96,6 +103,7 @@ body {
   height: 50px;
   margin-left: 50px;
   cursor: pointer;
+  fill: #fff;
 }
 
 .hidden {

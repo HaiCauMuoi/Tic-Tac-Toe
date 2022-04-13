@@ -4,6 +4,9 @@ const game = (function () {
   let gameActive = true;
   let currentPlayer = 'x';
   let gameBoard = ['', '', '', '', '', '', '', '', ''];
+  let score_p1 = 0;
+  let score_tie = 0;
+  let score_p2 = 0;
 
   const winningCombos = [
     [0, 1, 2],
@@ -45,9 +48,6 @@ const game = (function () {
     const player1_score = document.querySelector('.p1-score');
     const tie_score = document.querySelector('.tie-score');
     const player2_score = document.querySelector('.p2-score');
-    let score_p1 = 0;
-    let score_tie = 0;
-    let score_p2 = 0;
 
     for (let i = 0; i <= 7; i++) {
       let a = gameBoard[winningCombos[i][0]];
